@@ -1,0 +1,433 @@
+.page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.heroSection {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.8), rgba(234, 88, 12, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.introSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.introContent h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 1.5rem;
+}
+
+.introContent p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.introImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tabSection {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabButtons {
+  display: flex;
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  background: #e5e7eb;
+  color: #ea580c;
+}
+
+.tabButton.active {
+  background: #ea580c;
+  color: white;
+}
+
+.tabContent {
+  padding: 3rem;
+}
+
+.menuSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.menuCategory {
+  background: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.categoryHeader {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.categoryHeader h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.categoryTime {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.menuItems {
+  padding: 1rem;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.itemInfo h4 {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.itemInfo p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.itemPrice {
+  font-weight: bold;
+  color: #ea580c;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.facilitiesSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.facilityCard {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facilityCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.facilityIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.facilityCard h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 1rem;
+}
+
+.facilityCard p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.additionalInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.infoCard {
+  background: #f0f9ff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0f2fe;
+}
+
+.infoCard h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 1rem;
+}
+
+.infoCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoCard li {
+  padding: 0.5rem 0;
+  color: #4b5563;
+  border-bottom: 1px solid #e0f2fe;
+}
+
+.infoCard li:before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.hoursSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hoursGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hoursCard,
+.locationCard {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.hoursCard h3,
+.locationCard h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.hoursItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.hoursItem span:first-child {
+  font-weight: 600;
+  color: #374151;
+}
+
+.hoursItem span:last-child {
+  color: #059669;
+  font-weight: 600;
+}
+
+
+
+.locationItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.locationItem strong {
+  color: #ea580c;
+}
+
+.locationItem span {
+  color: #059669;
+  font-weight: 600;
+}
+
+.mapSection {
+  text-align: center;
+}
+
+.mapSection h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 1.5rem;
+}
+
+.mapImage {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .introSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tabButtons {
+    flex-direction: column;
+  }
+
+  .tabContent {
+    padding: 2rem 1rem;
+  }
+
+  .menuGrid,
+  .facilitiesGrid,
+  .hoursGrid,
+  .additionalInfo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 1.75rem;
+  }
+
+  .menuItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .itemPrice {
+    margin-left: 0;
+  }
+
+  .hoursItem,
+  .locationItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
