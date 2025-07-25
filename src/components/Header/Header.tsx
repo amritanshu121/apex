@@ -1,6 +1,9 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image";
+
+
 import { Search, Menu, X, Calendar, Phone, ChevronDown } from "lucide-react"
 import styles from "./Header.module.css"
 
@@ -44,11 +47,18 @@ const Header = () => {
       <div className={styles.mainHeader}>
         <div className="container">
           <div className={styles.headerContent}>
-            {/* Logo */}
-            <div className={styles.logoSection}>
-              <h1 className={styles.hospitalName}>Apex Hospital</h1>
-              <p className={styles.tagline}>Excellence in Healthcare</p>
-            </div>
+             <Link href="/" className={styles.logoWrapper}>
+  <Image
+    src="/images/apexlogo.jpg"
+    alt="Apex Hospital Logo"
+    fill
+    className={styles.logo}
+    priority
+  />
+</Link>
+
+
+            
 
             {/* Search Bar */}
             <div className={styles.searchBar}>
