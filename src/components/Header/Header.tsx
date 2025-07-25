@@ -49,7 +49,7 @@ const Header = () => {
           <div className={styles.headerContent}>
              <Link href="/" className={styles.logoWrapper}>
   <Image
-    src="/images/apexlogo.jpg"
+    src="/image/apexlogo.jpg"
     alt="Apex Hospital Logo"
     fill
     className={styles.logo}
