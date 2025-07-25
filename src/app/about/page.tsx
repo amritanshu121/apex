@@ -9,7 +9,7 @@ const AboutPage = () => {
       position: "Chief Medical Officer",
       specialization: "Cardiology",
       experience: "25+ years",
-      image: "/images/sir.jpg",
+      image: "/image/sir.jpg",
     },
     {
       name: "Dr. Priya Sharma",
@@ -57,7 +57,7 @@ const AboutPage = () => {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/images/apex.jpg"
+                src="/image/apex.jpg"
                 alt="Apex Hospital Building"
                 width={600}
                 height={400}
