@@ -146,19 +146,17 @@ const AboutPage = () => {
             </div>
             <div className={styles.videoSection}>
               <div className={styles.videoContainer}>
-                <Image
-                  src="/placeholder.svg?height=300&width=500"
-                  alt="Hospital Interior"
-                  width={500}
-                  height={300}
-                  className={styles.videoThumbnail}
-                />
-                <div className={styles.playButton}>
-                  <svg width="60" height="60" viewBox="0 0 60 60">
-                    <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)" />
-                    <polygon points="24,18 24,42 42,30" fill="#0066cc" />
-                  </svg>
-                </div>
+    <video
+      src="/videos/ww.mp4"
+      width={500}
+      height={300}
+      className={styles.videoThumbnail}
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+                
               </div>
               <p>Watch our hospital tour video</p>
             </div>
